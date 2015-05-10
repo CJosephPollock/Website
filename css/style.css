@@ -1,0 +1,182 @@
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 55px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+   font-family:"Arvo";
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+	padding: 0;
+}
+
+h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+
+
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 80vw; }
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+a.lpanel:hover{ color: #fff; }
+a.rpanel:hover{ color: #fff; }
+
+/*= Slide 1
+--------------------------------------------------------*/
+#blurb, #blurb h1 { color: #000; }
+#profile_picture {background: url('../img/headshot3trans.png'); width: 160px; height:160px; border-radius: 85px; margin: 0 auto;  display: block; position: relative; border: 5px solid #111;}
+
+#nav { width: 200px; float: center; margin-top: 20px; }
+#nav ul{
+	list-style: none;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#nav li{
+	margin: 45px auto;
+	float: center;
+	text-align: center;
+	background-color: transparent;
+}
+
+#nav li a { 
+	color: #000; 
+	opacity:1; 
+	font-size: 16px; 
+	text-decoration: none; 
+	border: 3px solid #000;
+	border-radius: 5px;
+}
+
+#nav li a:hover { 
+	border: 3px solid #fff;
+	color: #fff; 
+	opacity:1;  
+}
+
+/*= Slide 2
+--------------------------------------------------------*/
+
+.s2img {
+	border: 2px solid black; 
+	border-radius: 5vw; 
+	display: inline-block;
+}
+
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes {   
+ font-family: 'Goudy Bookletter 1911', serif;
+   font-weight: normal;
+   font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+   
+ .author_name_white { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }  
+ .author_name_gray { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }  
+ .quotes_container { width: 800px; margin: 0 auto; }
+
+
+#slide5 h1 {color: black; margin: -100px auto;}
+#facebook {}
+#linkedin {}
+#email {}
+#twitter {}
+
+/* Slide 2 Graphics */
+#uwLogo {background: url('../img/uwLogo.jpg')no-repeat; width: 8vw; height: 8vw; position: relative; border: 2px solid black; border-radius: 5vw; display: inline-block;}
+#huskyLogo {background: url('../img/huskyLogo.jpg')no-repeat; width: 8vw; height: 8vw; position: relative; border: 2px solid black; border-radius: 5vw; display: inline-block;}
+#compPic {background: url('../img/compPic.svg')no-repeat; width: 8vw; height: 8vw; position: relative; border: 2px solid black; border-radius: 5vw; display: inline-block;}
+#alpfaLogo {background: url('../img/alpfaLogo.jpg')no-repeat; width: 8vw; height: 8vw; position: relative; border: 2px solid black; border-radius: 5vw; display: inline-block;}
+#iSchoolLogo {background: url('../img/iSchoolLogo.png')no-repeat; width: 8vw; height: 8vw; position: relative; border: 2px solid black; border-radius: 5vw; display: inline-block;}
+#futureLogo {}
+
+
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+
+#slide1{
+	background:url('../img/backgrounds/cherries_blurred.jpg') 50% 0 no-repeat fixed ;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#slide2{
+	background-color: #fff;
+	background: url('../img/concrete_seamless.png');
+	color: #333333;
+	height: 363px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
+}
+
+#slide3{
+	background: url('../img/starry2.jpeg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 170px 0 0 0;	
+	background-size: cover;
+}
+
+#slide4{
+	background-color: #fff;
+	background: url('../img/crossword.png');
+	color: #333333;
+	height: 363px;
+	padding: 200px 0;
+}
+
+#slide5{
+	background: url('../img/backgrounds/cherries.jpg') 50% 0 no-repeat fixed;
+	height: 260px;
+	margin: 0 auto;
+	padding: 250px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5 {
+}
+
+
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  a { text-decoration: none; color: #fff;  }

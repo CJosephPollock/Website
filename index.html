@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Joe Pollock</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+   	
+	<div id="slide1">
+		<div class="content">
+			<div id="profile_picture"></div>
+			<div id="blurb">
+				<h1>Joe Pollock</h1>
+				<h3>Sophomore at the University of Washington<br>
+				Aspiring UX Unicorn</h3>
+			</div>
+			<nav id="nav" class="center">
+				<ul>
+					<li><a href="#slide1" class="active" title="Next Section">Intro</a></li>
+					<li><a href="#slide2" title="Next Section">About me</a></li>
+					<li><a href="#slide3" title="Next Section">Experience</a></li>
+					<li><a  href="#slide4" title="Next Section">Portfolio</a></li>
+					<li><a href="#slide5" title="Next Section">Contact</a></li>
+				</ul>
+			</nav>
+
+
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content">
+		    <h3>I grew up in San Francisco California, <img src="../img/slide2/sf.svg" class="s2img"><br>
+		    	<div id="uwLogo"></div> toured the University of Washington and <br>
+		    	I became a husky in August of 2013.<div id="huskyLogo"></div><br>
+		    	<div id="compPic"></div>While I've been here I've spent my fair share of time in Odegaard, <br>
+		    	became the CTO of ALPFA (the Association of Latin Professionals in Finance and Accounting),<div id="alpfaLogo"></div> <br>
+		    	<div id="iSchoolLogo"></div>and hope to major in informatics (iSchool logo).  <br>
+		    	I can't wait to see whats next! <div id="futureLogo"></div>
+		    </h3>
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			photos from mexico, guatemala, yeds, and the UW.  This has to be custom! + Resume + link to a page 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+			Portfolio (pictures in picture frame, or something?) Link to a page with the pictures + the stories behind each piece. 
+		</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+           <h1>Don't be a stranger</h1> 
+           <div id="facebook"></div>
+           <div id="linkedin"></div>
+           <div id="email"></div>
+           <div id="twitter"></div>
+           <div id="resume">download resume</div>
+		</div> 
+		
+
+    </div> 
+</body>
+</html>
